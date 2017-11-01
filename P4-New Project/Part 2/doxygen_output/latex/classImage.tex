@@ -1,0 +1,218 @@
+\hypertarget{classImage}{}\section{Image Class Reference}
+\label{classImage}\index{Image@{Image}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImage_a58edd1c45b4faeb5f789b0d036d02313}{Image} ()
+\item 
+\hyperlink{classImage_af2d2b2b46060ce7d4dda966d1bb29b45}{Image} (string input\+\_\+file)
+\item 
+\hyperlink{classImage_a05c964ca59502cc32c30e8ab89b5e920}{Image} (int w, int h)
+\item 
+\hyperlink{classImage_a0294f63700543e11c0f0da85601c7ae5}{$\sim$\+Image} ()
+\item 
+int \hyperlink{classImage_af2720a072812763395512fc3c8c21362}{get\+Width} ()
+\item 
+void \hyperlink{classImage_a385abd0ecca8787fe15d9a72ac60001a}{set\+Width} (int w)
+\item 
+int \hyperlink{classImage_aa4e1f064e5e1f3f04ad605408f1ec3af}{get\+Height} ()
+\item 
+void \hyperlink{classImage_a6e15783dcc55c301f4e887e27a7c38be}{set\+Height} (int h)
+\item 
+\hyperlink{structPixel}{Pixel} \hyperlink{classImage_a660ff0ed55722f4cfb9d1d511b379e2c}{get\+Image\+Pixel} (int col, int row)
+\item 
+void \hyperlink{classImage_a935a28e2ea0fe6f1daef70f3cf4042bc}{set\+Image\+Pixel} (int col, int row)
+\item 
+void \hyperlink{classImage_a4d32b8fc59d99587542ea6834921958c}{read} (string in\+File)
+\item 
+void \hyperlink{classImage_a6622902de36f98f373d87d12788fcaf8}{write} (string out\+File)
+\item 
+void \hyperlink{classImage_ab71d5ac51f8e210d16a93b4fa34c40ed}{write} (\hyperlink{structPixel}{Pixel} $\ast$array\+In, string out\+File)
+\item 
+void \hyperlink{classImage_a28cae6978dd1876f7a47760511f077ec}{to\+Grayscale} (string in\+File\+Name)
+\item 
+void \hyperlink{classImage_af02638aea2fda9609af2ef9f3f9dbc3b}{flip\+Horizontal} (string in\+File\+Name)
+\item 
+void \hyperlink{classImage_a1a5d7d2e612755c22f29a13f4f940da8}{negative\+Blue} (string in\+File\+Name)
+\item 
+void \hyperlink{classImage_a71d4559ee2624869ab91e1939ee261aa}{flatten\+Red} (string in\+File\+Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classImage_a58edd1c45b4faeb5f789b0d036d02313}\label{classImage_a58edd1c45b4faeb5f789b0d036d02313}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor initializes nothing because it will never be used \mbox{\Hypertarget{classImage_af2d2b2b46060ce7d4dda966d1bb29b45}\label{classImage_af2d2b2b46060ce7d4dda966d1bb29b45}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{string}]{input\+\_\+file }\end{DoxyParamCaption})}
+
+Constructor to initialize file name, the only one I actually will use 
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+file} & \+: The file to be used for input \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a05c964ca59502cc32c30e8ab89b5e920}\label{classImage_a05c964ca59502cc32c30e8ab89b5e920}} 
+\index{Image@{Image}!Image@{Image}}
+\index{Image@{Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Image\+::\+Image (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Constructor to initialize the width and height, that I will also not use \mbox{\Hypertarget{classImage_a0294f63700543e11c0f0da85601c7ae5}\label{classImage_a0294f63700543e11c0f0da85601c7ae5}} 
+\index{Image@{Image}!````~Image@{$\sim$\+Image}}
+\index{````~Image@{$\sim$\+Image}!Image@{Image}}
+\subsubsection{\texorpdfstring{$\sim$\+Image()}{~Image()}}
+{\footnotesize\ttfamily Image\+::$\sim$\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a destructor, whatever that is, I don\textquotesingle{}t know but there it is 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classImage_a71d4559ee2624869ab91e1939ee261aa}\label{classImage_a71d4559ee2624869ab91e1939ee261aa}} 
+\index{Image@{Image}!flatten\+Red@{flatten\+Red}}
+\index{flatten\+Red@{flatten\+Red}!Image@{Image}}
+\subsubsection{\texorpdfstring{flatten\+Red()}{flattenRed()}}
+{\footnotesize\ttfamily void Image\+::flatten\+Red (\begin{DoxyParamCaption}\item[{string}]{in\+File\+Name }\end{DoxyParamCaption})}
+
+Sets the red value of a pixel to 0 
+\begin{DoxyParams}{Parameters}
+{\em in\+File\+Name} & \+: File name to be modified and written with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_af02638aea2fda9609af2ef9f3f9dbc3b}\label{classImage_af02638aea2fda9609af2ef9f3f9dbc3b}} 
+\index{Image@{Image}!flip\+Horizontal@{flip\+Horizontal}}
+\index{flip\+Horizontal@{flip\+Horizontal}!Image@{Image}}
+\subsubsection{\texorpdfstring{flip\+Horizontal()}{flipHorizontal()}}
+{\footnotesize\ttfamily void Image\+::flip\+Horizontal (\begin{DoxyParamCaption}\item[{string}]{in\+File\+Name }\end{DoxyParamCaption})}
+
+Flips pixels in each row horizontally 
+\begin{DoxyParams}{Parameters}
+{\em in\+File\+Name} & \+: File name to be modified and written with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_aa4e1f064e5e1f3f04ad605408f1ec3af}\label{classImage_aa4e1f064e5e1f3f04ad605408f1ec3af}} 
+\index{Image@{Image}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Image@{Image}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int Image\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the height of the image \mbox{\Hypertarget{classImage_a660ff0ed55722f4cfb9d1d511b379e2c}\label{classImage_a660ff0ed55722f4cfb9d1d511b379e2c}} 
+\index{Image@{Image}!get\+Image\+Pixel@{get\+Image\+Pixel}}
+\index{get\+Image\+Pixel@{get\+Image\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{get\+Image\+Pixel()}{getImagePixel()}}
+{\footnotesize\ttfamily \hyperlink{structPixel}{Pixel} Image\+::get\+Image\+Pixel (\begin{DoxyParamCaption}\item[{int}]{col,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Gets the pixel at a specific point in the image 
+\begin{DoxyParams}{Parameters}
+{\em col} & \+: The column specified to retrieve \\
+\hline
+{\em row} & \+: The row specified to retrieve \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_af2720a072812763395512fc3c8c21362}\label{classImage_af2720a072812763395512fc3c8c21362}} 
+\index{Image@{Image}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Image@{Image}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int Image\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the width of the image \mbox{\Hypertarget{classImage_a1a5d7d2e612755c22f29a13f4f940da8}\label{classImage_a1a5d7d2e612755c22f29a13f4f940da8}} 
+\index{Image@{Image}!negative\+Blue@{negative\+Blue}}
+\index{negative\+Blue@{negative\+Blue}!Image@{Image}}
+\subsubsection{\texorpdfstring{negative\+Blue()}{negativeBlue()}}
+{\footnotesize\ttfamily void Image\+::negative\+Blue (\begin{DoxyParamCaption}\item[{string}]{in\+File\+Name }\end{DoxyParamCaption})}
+
+Rewrites the blue value of a pixel about the maximum value (Ex\+: 100 would become 155, 250 would become 5, etc.) 
+\begin{DoxyParams}{Parameters}
+{\em in\+File\+Name} & \+: File name to be modified and written with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a4d32b8fc59d99587542ea6834921958c}\label{classImage_a4d32b8fc59d99587542ea6834921958c}} 
+\index{Image@{Image}!read@{read}}
+\index{read@{read}!Image@{Image}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Image\+::read (\begin{DoxyParamCaption}\item[{string}]{in\+File }\end{DoxyParamCaption})}
+
+reads the image and sets the value of the points in the image in the image array 
+\begin{DoxyParams}{Parameters}
+{\em in\+File} & \+: The file to read from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a6e15783dcc55c301f4e887e27a7c38be}\label{classImage_a6e15783dcc55c301f4e887e27a7c38be}} 
+\index{Image@{Image}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Image@{Image}}
+\subsubsection{\texorpdfstring{set\+Height()}{setHeight()}}
+{\footnotesize\ttfamily void Image\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})}
+
+Sets the height of the image 
+\begin{DoxyParams}{Parameters}
+{\em h} & \+: The width to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a935a28e2ea0fe6f1daef70f3cf4042bc}\label{classImage_a935a28e2ea0fe6f1daef70f3cf4042bc}} 
+\index{Image@{Image}!set\+Image\+Pixel@{set\+Image\+Pixel}}
+\index{set\+Image\+Pixel@{set\+Image\+Pixel}!Image@{Image}}
+\subsubsection{\texorpdfstring{set\+Image\+Pixel()}{setImagePixel()}}
+{\footnotesize\ttfamily void Image\+::set\+Image\+Pixel (\begin{DoxyParamCaption}\item[{int}]{col,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Sets the pixel at a specific point in the image 
+\begin{DoxyParams}{Parameters}
+{\em col} & \+: The column specified to retrieve \\
+\hline
+{\em row} & \+: The row specified to retrieve \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a385abd0ecca8787fe15d9a72ac60001a}\label{classImage_a385abd0ecca8787fe15d9a72ac60001a}} 
+\index{Image@{Image}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!Image@{Image}}
+\subsubsection{\texorpdfstring{set\+Width()}{setWidth()}}
+{\footnotesize\ttfamily void Image\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{w }\end{DoxyParamCaption})}
+
+Sets the width of the image 
+\begin{DoxyParams}{Parameters}
+{\em w} & \+: The width to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a28cae6978dd1876f7a47760511f077ec}\label{classImage_a28cae6978dd1876f7a47760511f077ec}} 
+\index{Image@{Image}!to\+Grayscale@{to\+Grayscale}}
+\index{to\+Grayscale@{to\+Grayscale}!Image@{Image}}
+\subsubsection{\texorpdfstring{to\+Grayscale()}{toGrayscale()}}
+{\footnotesize\ttfamily void Image\+::to\+Grayscale (\begin{DoxyParamCaption}\item[{string}]{in\+File\+Name }\end{DoxyParamCaption})}
+
+Rewrites a pixel to be grayscale following the formula gray\+Val = (R$\ast$0.299)+(G$\ast$0.587)+(B$\ast$0.114) 
+\begin{DoxyParams}{Parameters}
+{\em in\+File\+Name} & \+: File name to be modified and written with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_a6622902de36f98f373d87d12788fcaf8}\label{classImage_a6622902de36f98f373d87d12788fcaf8}} 
+\index{Image@{Image}!write@{write}}
+\index{write@{write}!Image@{Image}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Image\+::write (\begin{DoxyParamCaption}\item[{string}]{out\+File }\end{DoxyParamCaption})}
+
+Writes the information in the image array to the file 
+\begin{DoxyParams}{Parameters}
+{\em in\+File} & \+: The file to read from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImage_ab71d5ac51f8e210d16a93b4fa34c40ed}\label{classImage_ab71d5ac51f8e210d16a93b4fa34c40ed}} 
+\index{Image@{Image}!write@{write}}
+\index{write@{write}!Image@{Image}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Image\+::write (\begin{DoxyParamCaption}\item[{\hyperlink{structPixel}{Pixel} $\ast$}]{array\+In,  }\item[{string}]{out\+File }\end{DoxyParamCaption})}
+
+Writes the information in the passed in array to the file 
+\begin{DoxyParams}{Parameters}
+{\em array\+In} & \+: The array to write \\
+\hline
+{\em in\+File} & \+: The file to read from \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+p4-\/2.\+cpp\end{DoxyCompactItemize}
